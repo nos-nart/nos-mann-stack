@@ -1,0 +1,11 @@
+{
+  "name": "nos-mann-stack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nos-nart/nos-mann-stack.git",
+  "author": "nos-nart <nosnart1510@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^6.0.2"
+  }
+}
