@@ -8,7 +8,7 @@ import { TodoSchema } from './schemas/todo.schema';
 
 @Module({
   imports: [
-    MongooseModule.forFeature([{ name: 'Item', schema: TodoSchema }]),
+    MongooseModule.forFeature([{ name: 'Todo', schema: TodoSchema }]),
     LoggerModule,
   ],
   controllers: [TodosController],
