@@ -1,0 +1,77 @@
+/*!---------------display---------------*/
+$displays: 'block' block, 'hidden' hidden, 'inline-block' inline-block, 'inline' inline, 'flex' flex, 'inline-flex' inline-flex, 'table' table, 'grid' grid
+
+@each $name, $display in $displays
+  .#{$name}
+    display: $display
+
+/*!---------------flex main axis---------------*/
+$flexMainAxis: 'start' flex-start, 'end' flex-end, 'center' center, 'between' space-between, 'around' space-around, 'evenly' space-evenly
+
+@each $name, $justify in $flexMainAxis
+  .justify-#{$name}
+    justify-content: $justify
+
+/*!---------------flex cross axis---------------*/
+$flexCrossAxis: 'stretch' stretch, 'start' flex-start, 'center' center, 'end' flex-end, 'baseline' baseline
+
+@each $name, $align in $flexCrossAxis
+  .items-#{$name}
+    align-content: $align
+
+/*!---------------positions ---------------*/
+$positions: 'static' static, 'fixed' fixed, 'absolute' absolute, 'relative' relative, 'sticky' sticky
+
+@each $name, $position in $positions
+  .#{$name}
+    position: $position
+
+/*!---------------margin + padding ---------------*/
+$spacings: '0' 0, '1' 0.25rem, '2' 0.5rem, '3' 0.75rem, '4' 1rem, '5' 1.25rem, '6' 1.5rem, '8' 2rem, '10' 2.5rem, '12' 3rem, '16' 4rem, '20' 5rem, '24' 6rem, '32' 8rem, '40' 10rem, '48' 12rem, '56' 14rem, '64' 16rem
+
+@each $name, $spacing in $spacings
+  .m-#{$name}
+    margin: $spacing
+
+  .mx-#{$name}
+    margin-left: $spacing
+    margin-right: $spacing
+
+  .my-#{$name}
+    margin-top: $spacing
+    margin-bottom: $spacing
+
+  .mr-#{$name}
+    margin-right: $spacing
+
+  .ml-#{$name}
+    margin-left: $spacing
+
+  .mt-#{$name}
+    margin-top: $spacing
+
+  .mb-#{$name}
+    margin-bottom: $spacing
+
+  .p-#{$name}
+    padding: $spacing
+
+  .px-#{$name}
+    padding-left: $spacing
+    padding-right: $spacing
+
+  .py-#{$name}
+    padding-top: $spacing
+    padding-bottom: $spacing
+
+  .pr-#{$name}
+    padding-right: $spacing
+
+  .pl-#{$name}
+    padding-left: $spacing
+
+  .pt-#{$name}
+    padding-top: $spacing
+
+  .pb-#{$name}
+    padding-bottom: $spacing
