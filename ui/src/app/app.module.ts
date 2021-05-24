@@ -4,11 +4,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { SharedModule } from './shared/shared.module';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -16,13 +16,13 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     CoreModule,
-    SharedModule,
     ReactiveFormsModule,
+    RouterModule.forRoot([]),
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
