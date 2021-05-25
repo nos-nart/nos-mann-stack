@@ -7,7 +7,7 @@ const routes: Routes = [
     path: '',
     component: MainLayoutComponent,
     children: [
-      { path: 'home', loadChildren: () => import('../modules/home/home.module').then(m => m.HomeModule) },
+      { path: '', pathMatch: 'full', loadChildren: () => import('../modules/home/home.module').then(m => m.HomeModule) },
       // { path: 'todo', loadChildren: '../users/users.module#UsersModule' },
     ]
   },
